@@ -1,108 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Jesus Cristo</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jesus Cristo - Vida e Ensinamentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-	<body>
-		<header>
-			<h1>Jesus Cristo</h1>
-			<nav>
-				<ul>
-					<li><a href="#introducao">Introdução</a></li>
-					<li><a href="#detalhes">Ensinamentos e Milagres</a></li>
-					<li><a href="#parabolas">Parábolas</a></li>
-					<li><a href="#contato">Contato</a></li>
-				</ul>
-			</nav>
-			
-		</header>
-		
-		<main>
-			<hr>
-			<section id = "introducao">
-				<img src="jesus.jpg" alt="Representação artística de Jesus Cristo" width="600">
-				<p><em>Pintura clássica representando Jesus Cristo ensinando.</em></p>
-				<h2>Introdução</h2>
-				<p>Jesus Cristo é a figura central do <strong>Cristianismo</strong>, considerado por seus seguidores como o Filho de Deus e o salvador da humanidade. <br>Sua história e seus ensinamentos estão registrados na Bíblia, mais especificamente no Novo Testamento, mas sua influência se estende profundamente pela arte, filosofia e ética ocidental ao longo dos séculos.</p>
-				<p>Ele nasceu em Belém, cresceu na humilde cidade de Nazaré e passou grande parte de sua vida viajando pela região da Galileia e da Judeia para compartilhar sua mensagem, atraindo multidões por onde passava.</p>
-			</section>
-			
-			<section id = "detalhes">
-				<h2>Detalhes e Ensinamentos</h2>
-				<p>O ministério de Jesus enfatizou princípios como o amor incondicional a Deus e ao próximo, o perdão e a compaixão absoluta pelos mais necessitados e marginalizados. Um de seus discursos mais marcantes é o chamado "Sermão da Montanha", onde ele inverteu os valores da época ao exaltar os humildes e pacificadores.</p>
-				<p>Além disso, Ele costumava ensinar através de histórias simples do cotidiano agrário da época, conhecidas como parábolas, para transmitir profundas verdades espirituais de forma acessível a qualquer pessoa.</p>
-	
-				<table>
-					<tr>
-						<th colspan="3">Principais Milagres</th>
-					</tr>
-					<tr>
-						<th>Milagre</th>
-						<th>Local</th>
-						<th>Significado Principal</th>
-					</tr>
-					<tr>
-						<td>Transformação de água em vinho</td>
-						<td>Caná da Galileia</td>
-						<td>O primeiro sinal público de seu ministério.</td>
-					</tr>
-					<tr>
-						<td>Multiplicação dos pães e peixes</td>
-						<td>Margens do Mar da Galileia</td>
-						<td>Demonstração de compaixão e provisão divina.</td>
-					</tr>
-					<tr>
-						<td>Ressurreição de Lázaro</td>
-						<td>Betânia</td>
-						<td>Uma demonstração de poder sobre a vida e a morte.</td>
-					</tr>
-				</table>
-			</section>
-			
-			<article id="parabolas">
-				<h2>Top 3 Parábolas Famosas</h2>
-				<ol>
-					<li><strong>A Parábola do Filho Pródigo:</strong> Uma emocionante lição sobre o perdão e a alegria do reencontro.</li>
-					<li><strong>A Parábola do Bom Samaritano:</strong> Um ensinamento prático sobre ajudar o próximo, quebrando barreiras de preconceito.</li>
-					<li><strong>A Parábola do Semeador:</strong> Uma reflexão sobre como diferentes corações recebem a mensagem divina de maneiras variadas.</li>
-				</ol>
-			</article>
-			
-			<aside>
-				<h2>Fatos e Curiosidades</h2>
-				<ul>
-					<li>Aprendeu o ofício de carpinteiro (ou construtor) com José, seu pai terreno.</li>
-					<li>Reuniu um grupo de doze apóstolos, pessoas de origens comuns como pescadores e até um cobrador de impostos.</li>
-					<li>Seu nascimento é o marco histórico que divide o calendário ocidental (A.C. e D.C.).</li>
-					<li>Realizou a famosa "Última Ceia" com seus discípulos na véspera de sua prisão.</li>
-					<li>Foi crucificado e, segundo a fé cristã, ressuscitou no terceiro dia.</li>
-				</ul>
-			</aside>
-		</main>
-		
-		<footer>
-			<hr>
-			<p><br>Para saber mais, visite a página da <a href="https://pt.wikipedia.org/wiki/Jesus" target="_blank">Wikipédia oficial</a> sobre o tema.</p>
-			
-			<section id = "contato">
-				<h3>Contato</h3>
-				<p>Deixe sua opinião, dúvida ou sugestão abaixo:</p>
-		
-				<form>
-					<label for="nome">Nome:</label><br>
-					<input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
+<body class="bg-light text-dark fw-light lh-lg">
 
-					<label for="email">E-mail:</label><br>
-					<input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br><br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand text-secondary fw-normal" href="#">
+                    <span class="border-bottom border-warning border-3 pb-1">Jesus Cristo</span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#introducao">Introdução</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ensinamentos">Ensinamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#milagres">Milagres</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#parabolas">Parábolas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#semana-santa">Morte e Ressurreição</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        
+        <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border-top border-warning border-3 mb-5">
+            <section id="introducao" class="text-center">
+                <h2 class="text-secondary fw-normal mb-4">Introdução e Contexto Histórico</h2>
+                
+                <img src="jesus.jpg" alt="Representação artística de Jesus Cristo ensinando" class="img-fluid rounded-3 shadow-sm mb-3" style="max-width: 600px;">
+                <p class="text-muted fst-italic small">Pintura clássica representando Jesus Cristo transmitindo sua mensagem.</p>
+                
+                <div class="text-start mt-5">
+                    <p>Jesus Cristo é a figura central do <strong>Cristianismo</strong> e uma das personalidades mais influentes de toda a história humana. Considerado por seus seguidores como o Filho de Deus e o Messias prometido, sua vida e ensinamentos moldaram profundamente a cultura, a ética, a filosofia e a arte ocidental ao longo de mais de dois milênios.</p>
+                    <p>Ele nasceu em Belém, na província romana da Judeia, em um período de grande tensão política e religiosa. Cresceu na humilde cidade de Nazaré e, por volta dos 30 anos, iniciou um ministério público viajando por regiões como a Galileia, Samaria e Judeia. Sua mensagem de amor radical e igualdade atraiu multidões de pessoas comuns, mas também despertou a oposição de líderes religiosos e políticos da época.</p>
+                </div>
+            </section>
+        </div>
+        
+        <section id="ensinamentos" class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-5">
+            <h2 class="text-secondary fw-normal mb-4">O Sermão da Montanha e Ensinamentos</h2>
+            <p>O núcleo da mensagem de Jesus era a proclamação do "Reino de Deus". Ele enfatizou princípios que invertiam a lógica de poder do mundo antigo: o amor incondicional (até mesmo aos inimigos), o perdão sem limites, a humildade e a compaixão absoluta pelos marginalizados, doentes e pobres.</p>
+            <p>Seu discurso mais famoso, o <strong>Sermão da Montanha</strong>, é um resumo ético de seus ensinamentos. Nele, Jesus destacou que os verdadeiros bem-aventurados são:</p>
+            
+            <ul class="list-group list-group-flush mt-4">
+                <li class="list-group-item bg-transparent text-dark border-light py-3">🕊️ Os humildes de espírito e os mansos.</li>
+                <li class="list-group-item bg-transparent text-dark border-light py-3">💧 Os que choram, pois serão consolados.</li>
+                <li class="list-group-item bg-transparent text-dark border-light py-3">⚖️ Os que têm fome e sede de justiça.</li>
+                <li class="list-group-item bg-transparent text-dark border-light py-3">🤝 Os misericordiosos e os pacificadores.</li>
+            </ul>
+        </section>
 
-					<label for="mensagem">Mensagem:</label><br>
-					<textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem, reflexão ou dúvida aqui..."></textarea><br><br>
+        <section id="milagres" class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-5">
+            <h2 class="text-secondary fw-normal mb-4">Principais Milagres Registrados</h2>
+            <p class="mb-4">Segundo os relatos bíblicos, Jesus realizou diversos milagres que serviam não apenas como demonstração de poder divino, mas principalmente como atos de profunda compaixão para aliviar o sofrimento humano.</p>
+            
+            <div class="table-responsive">
+                <table class="table table-hover align-middle border-light">
+                    <thead class="table-light text-secondary">
+                        <tr>
+                            <th class="fw-normal">Milagre</th>
+                            <th class="fw-normal">Local</th>
+                            <th class="fw-normal">Significado Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-top-0">
+                        <tr>
+                            <td>Transformação de água em vinho</td>
+                            <td>Caná da Galileia</td>
+                            <td class="text-muted">O primeiro sinal público, demonstrando a alegria do Reino.</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplicação dos pães e peixes</td>
+                            <td>Margens do Mar da Galileia</td>
+                            <td class="text-muted">Demonstração de provisão divina e cuidado com as necessidades físicas.</td>
+                        </tr>
+                        <tr>
+                            <td>Cura do cego de nascença</td>
+                            <td>Jerusalém</td>
+                            <td class="text-muted">Simboliza trazer luz à escuridão espiritual e física.</td>
+                        </tr>
+                        <tr>
+                            <td>Andar sobre as águas e acalmar a tempestade</td>
+                            <td>Mar da Galileia</td>
+                            <td class="text-muted">Poder e autoridade sobre as forças caóticas da natureza.</td>
+                        </tr>
+                        <tr>
+                            <td>Ressurreição de Lázaro</td>
+                            <td>Betânia</td>
+                            <td class="text-muted">A maior demonstração de poder sobre a vida e a morte antes de sua própria cruz.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                    <article id="parabolas" class="mb-5">
+                        <h2 class="text-secondary fw-normal mb-4">As 5 Parábolas Mais Famosas</h2>
+                        <p>Para tornar conceitos teológicos complexos acessíveis ao povo comum, Jesus utilizava o cotidiano agrário, pastoreio e familiar em suas histórias.</p>
+                        <ol class="ps-4 mt-4">
+                            <li class="mb-3"><strong>A Parábola do Filho Pródigo:</strong> Uma emocionante lição sobre o arrependimento humano e o perdão incondicional de Deus.</li>
+                            <li class="mb-3"><strong>A Parábola do Bom Samaritano:</strong> Um ensinamento prático sobre amar o próximo, quebrando fortes barreiras étnicas e de preconceito da época.</li>
+                            <li class="mb-3"><strong>A Parábola do Semeador:</strong> Uma reflexão sobre como diferentes tipos de corações recebem a mensagem de maneiras variadas.</li>
+                            <li class="mb-3"><strong>A Parábola da Ovelha Perdida:</strong> Mostra o esforço incansável e o amor divino para resgatar até mesmo uma única pessoa que se desvia do caminho.</li>
+                            <li class="mb-0"><strong>A Parábola do Grão de Mostarda:</strong> Ilustra como o Reino de Deus começa pequeno e invisível, mas cresce até se tornar um abrigo para todos.</li>
+                        </ol>
+                    </article>
 
-					<button type="submit">Enviar mensagem</button>
-				</form>
-			</section>
-		</footer>
-	</body>
+                    <article id="semana-santa">
+                        <h2 class="text-secondary fw-normal mb-4 border-top pt-5">Morte e Ressurreição</h2>
+                        <p>Os últimos dias de Jesus em Jerusalém são o ponto culminante dos Evangelhos. Após celebrar a "Última Ceia" com seus doze apóstolos, Ele foi traído por Judas Iscariotes, preso e submetido a julgamentos sumários pelas autoridades judaicas e romanas.</p>
+                        <p>Condenado pelo governador Pôncio Pilatos, Jesus foi crucificado no monte Gólgota. No entanto, a base da fé cristã reside no relato de que, ao terceiro dia, <strong>o túmulo foi encontrado vazio e Jesus ressuscitou</strong>, vencendo a morte e garantindo a salvação à humanidade.</p>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <aside class="bg-white p-4 rounded-4 shadow-sm border-start border-warning border-3 h-100">
+                    <h3 class="text-secondary fw-normal mb-4 h4">Fatos e Contexto</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3 pb-2 border-bottom border-light">Seu nome original em aramaico/hebraico era <em>Yeshua</em>, que significa "Deus salva".</li>
+                        <li class="mb-3 pb-2 border-bottom border-light">Aprendeu o ofício de carpinteiro (ou construtor) com José.</li>
+                        <li class="mb-3 pb-2 border-bottom border-light">O idioma usado no dia a dia para se comunicar com o povo era o aramaico.</li>
+                        <li class="mb-3 pb-2 border-bottom border-light">Seu nascimento e vida marcam a divisão do calendário ocidental (A.C. e D.C.).</li>
+                        <li class="mb-0">O Cristianismo é hoje a maior religião do mundo.</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-white py-5 mt-5 shadow-sm border-top">
+        <div class="container text-center">
+            
+            <section id="contato" class="mb-5 mx-auto" style="max-width: 600px;">
+                <h3 class="text-secondary fw-normal mb-3">Deixe sua Reflexão</h3>
+                <p class="text-muted mb-4">Compartilhe sua opinião, dúvida ou pedido.</p>
+        
+                <form class="text-start bg-light p-4 rounded-4 shadow-sm border border-white">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label text-secondary small">Nome Completo</label>
+                        <input type="text" class="form-control border-0 shadow-none px-3 py-2 rounded-3" id="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-secondary small">E-mail Principal</label>
+                        <input type="email" class="form-control border-0 shadow-none px-3 py-2 rounded-3" id="email" placeholder="email@exemplo.com">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mensagem" class="form-label text-secondary small">Sua Mensagem</label>
+                        <textarea class="form-control border-0 shadow-none px-3 py-2 rounded-3" id="mensagem" rows="4" placeholder="Escreva aqui sua reflexão..."></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-outline-secondary rounded-pill py-2">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </section>
+            
+            <p class="text-muted small mb-0">Para aprofundar seus conhecimentos, visite a página da <a href="https://pt.wikipedia.org/wiki/Jesus" target="_blank" class="text-secondary text-decoration-underline">Wikipédia oficial</a>.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
