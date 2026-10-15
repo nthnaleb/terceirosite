@@ -96,3 +96,19 @@ class ContaBancaria:
         print(f" Saldo Disponível: R$ {self.saldo:.2f}")
         print(f" Situação Atual  : {self.situacao.capitalize()}")
         print(f"====================================================")
+
+
+# --- CÓDIGO DE EXECUÇÃO ---
+
+# 1. Criação das contas
+conta1 = ContaBancaria("6767-X", "João Silva", "123.456.789-00", "6767", "corrente", 500.0)
+conta2 = ContaBancaria("6677-Y", "Maria Santos", "987.654.321-11", "6667", "poupança", 100.0)
+
+# 2. Testando operações
+conta1.apresentarDados()
+conta1.depositar(200.0)
+conta1.transferir(150.0, conta2)
+
+# 3. Exibindo relatórios finais
+conta1.emitirRelatorio()
+conta2.emitirRelatorio()
